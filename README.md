@@ -45,7 +45,7 @@ var civic = {
 
 What if we had one hundred cars we were making?  Writing out object literals by hand can get very tedious.  What if we could build a function that makes them for us?
 
-### We Do: Create a makeCar Function (5 minutes / 0:10)
+### We Do: Create a makeCar Function
 ```
 function makeCar(model, color){
   return {
@@ -63,7 +63,7 @@ var civic = makeCar("Honda Civic", "lemonchiffon")
 ```
 This is the basic idea behind OOP; we define a blueprint for an object and use it to generate multiple instances of it!
 
-## Classes
+## Classes (5 min / 0:10)
 It's so common that we need to make objects with similar properties and methods that programming languages usually have some features to help with this.
 
 In Javascript, ES6 added a feature called classes to accomplish this. A class serves as a blueprint for instantiating new objects.  Prototypes is another feature that can also help with this.  Prototypes hare more flexibility than classes but are a little less straightforward.  
