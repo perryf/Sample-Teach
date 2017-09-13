@@ -69,7 +69,7 @@ It's so common that we need to make objects with similar properties and methods 
 In Javascript, ES6 added a feature called classes to accomplish this. A class serves as a blueprint for instantiating new objects.  Prototypes is another feature that can also help with this.  Prototypes hare more flexibility than classes but are a little less straightforward.  
 
 Classes abstract information common to all objects that we are going to create.  
-A class of a house could be Building.  A class of perry could be Person
+A class of a house could be Building.  A class of perry could be Person.  
 
 Let's take a look the following Car class:
 ```
@@ -80,11 +80,7 @@ class Car {
     this.fuel = 100
   }
   drive(){
-    this.fuel--
     return "Vroom!"
-  }
-  refuel(){
-    this.fuel = 100
   }
 }
 
@@ -167,6 +163,10 @@ class Cat extends Animal {
     return `Meow! I am not a dog! My name is ${this.name}`
   }
 }
+
+const greg = new Animal("Gregory", "Mountain Goat")
+const fido = new Dog("Fido", "Beagle", true)
+const samuel = new Cat('Samuel', 'Cheshire', 9)
 ```
 Notice some of our new keywords:
 * **extends** tells javascript that we are building a new class that inherits the properties and methods from our parent class
